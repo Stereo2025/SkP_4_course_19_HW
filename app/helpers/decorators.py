@@ -5,7 +5,7 @@ from app.helpers.constants import JWT_SECRET, JWT_ALGORITHM
 
 def auth_required(func):
     """
-    Проверяет есть ли в заголовках нашего запроса есть Authorization. Если нет отдаёт 401.
+    Проверяет есть ли в заголовках нашего запроса Authorization. Если нет отдаёт 401.
     Если есть, извлекает токен, декодирует с помощью jwt.decode тем самым получая инфо о пользователе.
     """
 
