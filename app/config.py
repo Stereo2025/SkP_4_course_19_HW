@@ -1,5 +1,5 @@
 class Config(object):
-    DEBUG = True
+    DEBUG = False
     SQLALCHEMY_DATABASE_URI = 'sqlite:///./HW_19.db'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     JSON_AS_ASCII = False

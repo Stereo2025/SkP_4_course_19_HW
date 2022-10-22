@@ -32,10 +32,10 @@ def create_data():
         db.create_all()
 
 
+app_config = Config()
+app = create_app(app_config)
+configure_app(app)
 if __name__ == '__main__':
-    app_config = Config()
-    app = create_app(app_config)
-    configure_app(app)
     create_data()
     app.run()
 #######################################################################################################################
